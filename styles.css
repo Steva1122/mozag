@@ -1,0 +1,134 @@
+/* Place your CSS styles in this file */
+*{margin: 0;
+padding: 0;}
+
+body{background-color: black;
+padding: 0;
+margin: 0;}
+
+.background {background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+background-position: top center;
+position:relative ;
+height: 100vh;
+}
+
+.background-home {background-image:url("./viber_slika_2024-10-22_17-32-51-171.jpg");} 
+
+.background-home::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.background-news {background-image: url(./IMG-e83142f5408076beaa21c0a96a369c14-V.jpg);
+background-position:center;
+}
+
+
+.logo { width:15vw ;height: auto;}
+
+.container {position: relative;}
+
+.pozicija {position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-55%);}
+
+ul {list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  font-family: 'Metal Mania', cursive;
+  font-weight: bold;
+  font-size:x-large;
+  }
+
+li {
+padding: 15px;
+color: white;
+transition: transform 0.3s;
+}
+
+li:hover{transform: scale(1.2)}
+
+a:hover {
+  color: rgb(54, 84, 139);
+  cursor: pointer;
+  transform: scale(1.2);
+  
+}
+
+a {text-decoration: none;
+color: white;
+transition: transform 0.3s;}
+
+.social-media a { font-size: 3vw;
+transition: transform 0.3s;}
+
+.social-media {
+  display: flex;
+  gap: 3vw; /* space between icons */
+  position: absolute;
+  bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+
+.social-media a:hover {transform: scale(1.2);}
+
+
+.metal-heading {
+  font-family: 'Metal Mania', cursive;
+  font-size: 3vw;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  position: relative;
+  top: 5vh;
+  padding-bottom:5vh;
+  }
+
+  .mreza {display: grid;
+   grid-template-columns: auto auto;
+   height:800px;
+   justify-content: center;
+   column-gap: 50px;
+   }
+
+  .submithub {grid-area: 1 / 2 / span 2 / span 1;
+  }
+
+p {font-family: 'Metal Mania', cursive;
+color: white;
+font-size: 2vw;
+padding-left:2vw;
+}  
+
+.about {display: flex;
+align-items: center;
+}
+
+.members {display: flex;
+gap:5%;
+justify-content: center;
+padding-top: 1%;}
+
+.music {display: flex;
+justify-content: center;
+flex-direction: column;
+vertical-align: center;
+align-items: center;
+gap: 20px;
+}
+
+.gallery {display: flex;
+}
