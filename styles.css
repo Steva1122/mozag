@@ -15,7 +15,7 @@ position:relative ;
 height: 100vh;
 }
 
-.background-home {background-image:url("./viber_slika_2024-10-22_17-32-51-171.jpg");} 
+.background-home {background-image:url(".github/images/VEN_3576-min.jpg");} 
 
 .background-home::after {
   content: "";
@@ -28,10 +28,19 @@ height: 100vh;
 }
 
 
-.background-news {background-image: url(./IMG-e83142f5408076beaa21c0a96a369c14-V.jpg);
+.background-news {background-image: url(".github/images/IMG-e83142f5408076beaa21c0a96a369c14-V-min.jpg");
 background-position:center;
 }
 
+.background-news::after{
+  content: "";
+  display: block;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 .logo { width:15vw ;height: auto;}
 
@@ -122,6 +131,24 @@ gap:5%;
 justify-content: center;
 padding-top: 1%;}
 
+.members img {width:20%;}
+
+.members a {
+  display: inline-block;
+  width: 20%;
+}
+
+.members a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.members a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
 .music {display: flex;
 justify-content: center;
 flex-direction: column;
@@ -130,5 +157,52 @@ align-items: center;
 gap: 20px;
 }
 
-.gallery {display: flex;
+.background-gigs {background-image: url(".github/images/VEN_3620 2-min.jpg");}
+
+table{color:#fff;
+font-family: 'Metal Mania', cursive;
+width: 100%;
+text-align: center;
+border-collapse: collapse;
+font-size: 50px;
+margin: auto;
+margin-top: 200px;
+
 }
+
+tr, th, td {border-bottom-style: solid;
+border-bottom-color:#fff;
+padding: 50px;
+transition: transform 0.3s;
+}
+
+td a {color: #fff;
+transition: transform 0.3s}
+
+td a:hover {  color: rgb(24, 182, 37);
+  cursor: pointer;
+  transform: scale(1.2);
+  
+}
+
+td:hover {transform: scale(1.2)}
+
+#insta-contact {font-size: 3vw;}
+
+.gallery {display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 10px;
+} 
+
+h1 { font-family: 'Metal Mania',cursive;
+text-align: center;
+color:#fff;
+font-size: 3vw;}
+
+.gallery img {width: 100%;
+height:auto;
+display: block;
+}
+
+.gallery a:hover{transform: none;}
+

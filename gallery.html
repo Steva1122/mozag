@@ -1,0 +1,63 @@
+<!doctype>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="band, metal, metalcore, music, guitar, Serbian metal">
+        <meta name="description" content="Mozag is a metalcore band from Ruma, Serbia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mozag-Gallery</title>
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>Photo Gallery</h1>
+        <div class="gallery">
+        <a href=".github/images/006-min.jpg">  <img src=".github/images/006-min.jpg"> </a>
+          <a href=".github/images/010-min.jpg"><img src=".github/images/010-min.jpg"></a>
+          <a href=".github/images/011-min.jpg"><img src=".github/images/011-min.jpg" ></a>
+          <a href=".github/images/020 (1)-min.jpg"><img src=".github/images/020 (1)-min.jpg"></a>
+          <a href=".github/images/023-min.jpg"><img src=".github/images/023-min.jpg"></a>
+          <a href=".github/images/024 (1)-min.jpg"><img src=".github/images/024 (1)-min.jpg"></a>
+          <a href=".github/images/030-min.jpg"><img src=".github/images/030-min.jpg"></a>
+          <a href=".github/images/DSC07862-min.jpg"><img src=".github/images/DSC07862-min.jpg"></a>
+          <a href=".github/images/IMG_20240819_131128_553-min.jpg"><img src=".github/images/IMG_20240819_131128_553-min.jpg"></a>
+          <a href=".github/images/IMG_20240819_131124_540-min.jpg"><img src=".github/images/IMG_20240819_131124_540-min.jpg"></a>
+           <a href=".github/images/IMG_20240819_131137_587-min.jpg"><img src=".github/images/IMG_20240819_131137_587-min.jpg"></a>
+            <a href=".github/images/IMG_20240819_131139_917-min.jpg"><img src=".github/images/IMG_20240819_131139_917-min.jpg"></a>
+            <a href=".github/images/IMG_20240820_200746_069-min.jpg"><img src=".github/images/IMG_20240820_200746_069-min.jpg"></a>
+            <a href=".github/images/IMG_20240914_124457_691-min.jpg"><img src=".github/images/IMG_20240914_124457_691-min.jpg"></a>
+             <a href=".github/images/IMG_20240914_124514_612-min.jpg"><img src=".github/images/IMG_20240914_124514_612-min.jpg"></a>
+              <a href=".github/images/IMG_20240914_124528_461-min.jpg"><img src=".github/images/IMG_20240914_124528_461-min.jpg"></a>
+              <a href=".github/images/IMG_20240914_124544_480-min.jpg"><img src=".github/images/IMG_20240914_124544_480-min.jpg"></a>
+              <a href=".github/images/IMG_20240914_124545_886-min.jpg"><img src=".github/images/IMG_20240914_124545_886-min.jpg"></a>
+              <a href=".github/images/IMG-3a0f46dcdf1951d80b40376dea6ac535-V-min.jpg"><img src=".github/images/IMG-3a0f46dcdf1951d80b40376dea6ac535-V-min.jpg"></a>            
+              <a href=".github/images/IMG-3a0f46dcdf1951d80b40376dea6ac535-V-min.jpg"><img src=".github/images/IMG-3a0f46dcdf1951d80b40376dea6ac535-V-min.jpg"></a>
+              <a href=".github/images/IMG-b7690fd7ff088198a6ed01b422aed0a0-V-min.jpg"><img src=".github/images/IMG-b7690fd7ff088198a6ed01b422aed0a0-V-min.jpg"></a>
+        </div>
+
+        <!-- Modal for full-size image -->
+<div id="img-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:9999;">
+  <img id="modal-img" src="" style="max-width:90vw; max-height:90vh; box-shadow:0 0 20px #000;">
+</div>
+<script>
+  // Open modal on image click
+  document.querySelectorAll('.gallery a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('modal-img').src = this.href;
+      document.getElementById('img-modal').style.display = 'flex';
+    });
+  });
+  // Close modal on overlay click
+  document.getElementById('img-modal').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('modal-img').src = '';
+  });
+</script>
+
+    </body>
+
+</html>

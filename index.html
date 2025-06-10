@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="keywords" content="band, metal, metalcore, music, guitar, Serbian metal">
@@ -20,15 +20,15 @@
   <body>
     <section class="background-home background">
       <div class="container">
-       <img class="logo" src="./Mozag-beli.png" alt="band logo">
+       <img class="logo" src=".github/images/Mozag-beli.png" alt="band logo" loading="lazy">
        <div class="pozicija">
          <ul> 
           <li><a href="./index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#music">Music</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li>Contact</li>
-          <li>Gigs</li>
+          <li><a href="#gigs">Gigs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="gallery.html" target="_blank">Gallery</a></li>
          </ul> 
         </div>
       </div>
@@ -61,16 +61,16 @@
 
       <h2 class="metal-heading" style="top:0;">About</h2>
       <div class="about">
-        <img src="./1000016916.jpg" alt="band picture" width="50%" >
-       <p> We are metalcore band from Serbia. Our sound is mainly melodic metalcore combined with other genres like: melodic death metal,
+        <img src=".github/images/VEN_3810-min.jpg" alt="band picture" width="50%">
+       <p> We are a metalcore band from Serbia. Our sound is mainly melodic metalcore combined with other genres like: melodic death metal,
         thrash metal, groove metal. Heavily influenced by: Trivium, Killswitch Engage, Bullet For My Valentine. Currently working on our debut album.</p>
       </div>
-      <h5 class="metal-heading" style="top=0;"> Band Members: </h5>
+      <h5 class="metal-heading" style="top:0;"> Band Members: </h5>
       <div class="members">
-        <img src="./viber_slika_2024-10-22_17-32-51-191.jpg" alt="Danilo Petkocic - solo guitar" width="20%">
-         <img src="./viber_slika_2024-10-22_17-32-51-208.jpg" alt="Nikola Lazar - bass" width="20%">
-         <img src="./viber_slika_2024-10-22_17-32-51-241.jpg" alt="Nikola Zivanovic - drums" width="20%">
-         <img src="./viber_slika_2024-10-22_17-32-51-296.jpg" alt="Stevan Kis" width="20%">
+        <a href=".github/images/mozag.zip - 4-min.webp"><img src=".github/images/mozag.zip - 4-min.webp" alt="Danilo Petkocic - solo guitar"  loading="lazy"></a>
+        <a href=".github/images/mozag.zip - 5-min.webp"><img src=".github/images/mozag.zip - 5-min.webp" alt="Nikola Lazar - bass"  loading="lazy"></a>
+        <a href=".github/images/mozag.zip - 3-min.webp"><img src=".github/images/mozag.zip - 3-min.webp" alt="Nikola Zivanovic - drums"  loading="lazy"></a>
+        <a href=".github/images/mozag.zip - 6-min.webp"><img src=".github/images/mozag.zip - 6-min.webp" alt="Stevan Kis"  loading="lazy"></a>
       </div>
     </section>
     <section id="music">
@@ -81,29 +81,55 @@
         <iframe width="50%" height="352" src="https://www.youtube.com/embed/tui2UMSDc1A?si=9usllBAsmD-KaQaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
-    <section id="gallery">
-       <h2 class="metal-heading">Gallery</h2>
-       <div class="gallery">
-        
+    <section id="gigs" class="background background-gigs">
+      <h2 class="metal-heading" style="color: #fff;">Gigs</h2>
+      <div>
+      <table>
+        <tr>
+        <th>DATUM</th>
+        <th>EVENT</th>
+        <th>LOCATION</th>
+        </tr>
+        <tr>
+          <td>28.6.2025</td>
+          <td><a href="https://www.instagram.com/p/DKZMZUksseX/" target="_blank"> promotin - Bugarska Skupstina, Mosh Pit, Mozag</a></td>
+          <td><a href="https://g.co/kgs/MQGjSRw" target="_blank">Club Zeppelin (Zrenjanin)</a></td>
+        </tr>
+         <tr>
+          <td>29.6.2025</td>
+          <td><a href="https://www.instagram.com/p/DKZMiHAsvpy/" target="_blank">promotin - Bugarska Skupstina, Mosh Pit, Mozag</a></td>
+          <td><a href="https://g.co/kgs/biMmTcq" target="_blank">Fest (Zemun)</a></td>
+        </tr>
+      </table>
+      </div>
+    </section>
+    <section id="contact">
+       <div style="display: flex; align-items: center; justify-content:space-evenly;">
+       <a href="mailto:mozagruma@gmail.com" style="text-align: center; padding: 0; font-size:xx-large ;">contact: mozagruma@gmail.com</a>
+       <a id="insta-contact" href="https://www.instagram.com/mozag.metal/" target="_blank" aria-label="Instagram"> 
+        <i class="fab fa-instagram"></i></a>
+       </div>
+    </section>
 
-
-
-         
-
-    
-
-
-
-
-
-
-  
-        
-    
-
-    
-   
-        
+        <!-- Modal for full-size image -->
+    <div id="img-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:9999;">
+      <img id="modal-img" src="" style="max-width:90vw; max-height:90vh; box-shadow:0 0 20px #000;">
+    </div>
+    <script>
+      // Open modal on image click
+      document.querySelectorAll('.members a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('modal-img').src = this.href;
+          document.getElementById('img-modal').style.display = 'flex';
+        });
+      });
+      // Close modal on overlay click
+      document.getElementById('img-modal').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('modal-img').src = '';
+      });
+    </script>
   </body>
-
+  
 </html>
