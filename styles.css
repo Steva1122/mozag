@@ -15,7 +15,7 @@ position:relative ;
 height: 100vh;
 }
 
-.background-home {background-image:url("/images/VEN_3576-min.jpg");} 
+.background-home {background-image:url(".github/images/VEN_3576-min.jpg");} 
 
 .background-home::after {
   content: "";
@@ -28,7 +28,7 @@ height: 100vh;
 }
 
 
-.background-news {background-image: url("/images/IMG-e83142f5408076beaa21c0a96a369c14-V-min.jpg");
+.background-news {background-image: url(".github/images/IMG-e83142f5408076beaa21c0a96a369c14-V-min.jpg");
 background-position:center;
 }
 
@@ -157,7 +157,7 @@ align-items: center;
 gap: 20px;
 }
 
-.background-gigs {background-image: url("/images/VEN_3620 2-min.jpg");}
+.background-gigs {background-image: url(".github/images/VEN_3620 2-min.jpg");}
 
 table{color:#fff;
 font-family: 'Metal Mania', cursive;
