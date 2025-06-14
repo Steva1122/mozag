@@ -80,7 +80,7 @@ a {text-decoration: none;
 color: white;
 transition: transform 0.3s;}
 
-.social-media a { font-size: 3vw;
+.social-media a { font-size: clamp(2rem, 6vw, 4rem);
 transition: transform 0.3s;}
 
 .social-media {
@@ -207,16 +207,39 @@ display: block;
 
 .gallery a:hover{transform: none;}
 
-button {display: none;}
+.menu {display:none}
 
+.menu-icon{
+  display: none;
+  background:transparent;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Metal Mania',cursive;
+}
+
+.menu-icon:hover{color: rgb(54, 84, 139);
+  cursor: pointer;
+  transform: scale(1.2);  }
+
+.menu-checkbox {display: none;}
 
 @media (max-width: 600px) {
   .background-home { background-image:url("images/VEN_3810-min.jpg");
     background-size:contain ;
     background-repeat: no-repeat;
-background-position: top center ;  
-width: 100%;
+    background-position:  center bottom ;  
+    width: 100%;
   }
+
+  .background-home::after {
+ 
+}
+
 
   .logo { float: right;
   display: block;}
@@ -226,14 +249,33 @@ width: 100%;
 
   ul {flex-direction: column;
   font-size:large;
+  display: none;
+  align-items: center;
  }
 
  li { padding: 10px;}
 
+.menu-icon {display: block;}
 
+.menu-checkbox:checked ~ ul {display: flex;}
 
+li:hover{transform: none}
 
+a:hover { color:#fff;
+transform: none;}
 
+a:active {
+  color: rgb(54, 84, 139);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.menu-icon:hover{color: #fff;
+  transform: none;  }
+
+  .menu-icon:active { color:rgb(54, 84, 139)}
+
+.social-media a:hover{transform: none;}
 
 
 
