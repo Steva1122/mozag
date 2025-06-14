@@ -58,6 +58,7 @@ ul {list-style-type: none;
   font-family: 'Metal Mania', cursive;
   font-weight: bold;
   font-size:x-large;
+  margin:0;
   }
 
 li {
@@ -164,9 +165,9 @@ font-family: 'Metal Mania', cursive;
 width: 100%;
 text-align: center;
 border-collapse: collapse;
-font-size: 50px;
+font-size: 30px;
 margin: auto;
-margin-top: 200px;
+margin-top: 0;
 
 }
 
@@ -206,3 +207,52 @@ display: block;
 
 .gallery a:hover{transform: none;}
 
+button {display: none;}
+
+
+@media (max-width: 600px) {
+  .background-home { background-image:url("images/VEN_3810-min.jpg");
+    background-size:contain ;
+    background-repeat: no-repeat;
+background-position: top center ;  
+width: 100%;
+  }
+
+  .logo { float: right;
+  display: block;}
+
+  .pozicija {left:0;
+  transform: translateX(0);}
+
+  ul {flex-direction: column;
+  font-size:large;
+ }
+
+ li { padding: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+}
