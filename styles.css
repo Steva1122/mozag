@@ -230,16 +230,12 @@ display: block;
 
 @media (max-width: 600px) {
   .background-home { background-image:url("images/VEN_3810-min.jpg");
-    background-size:contain ;
+    background-size:100% 100%;
     background-repeat: no-repeat;
-    background-position:  center bottom ;  
-    width: 100%;
+    background-position:  top center;  
   }
 
-  .background-home::after {
- 
-}
-
+  .background-home::after{display:none}
 
   .logo { float: right;
   display: block;}
@@ -277,7 +273,7 @@ a:active {
 
 .social-media a:hover{transform: none;}
 
-
+.social-media {bottom: 5vh;}
 
 
 
