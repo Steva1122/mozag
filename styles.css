@@ -227,6 +227,8 @@ display: block;
 
 .menu-checkbox {display: none;}
 
+#contact-mobile {display:none;}
+
 @media (max-width: 600px) {
   .background-home { background-image:url("images/VEN_3810-min.jpg");
     background-size:100% 100%;
@@ -303,9 +305,35 @@ gap:5vh}
 
 .spotify-embed {width:80%;}
 
-  .background-gigs { background-image:none;
-   
+  .background-gigs { background-image:none;}
+
+  th {display:none}
+
+  td, tr{ display:block;
+  font-size:large;
+border-bottom-style: none;
+padding:2vw;}
+
+
+tr { display:block;
+  font-size:large;
+border-bottom-style:solid;
+padding:2vw;}
+
+
+td a:active {  color: rgb(24, 182, 37);
+  cursor: pointer;
+  transform:none;
   }
+
+td:hover {transform: none;}
+
+#insta-contact {display: none;}
+
+#contact {display:none}
+
+#contact-mobile {display:block;
+padding-top: 5vh;}
 
 }
 
