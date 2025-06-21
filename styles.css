@@ -104,24 +104,21 @@ transition: transform 0.3s;}
   font-weight: 100;
   position: relative;
   top: 5vh;
-  padding-bottom:5vh;
+  padding-bottom:10vh;
   }
 
-  .mreza {display: grid;
-   grid-template-columns: auto auto;
-   height:800px;
-   justify-content: center;
-   column-gap: 50px;
-   }
-
-  .submithub {grid-area: 1 / 2 / span 2 / span 1;
-  }
 
 p {font-family: 'Metal Mania', cursive;
 color: white;
 font-size: 2vw;
 padding-left:2vw;
 }  
+
+.submithub {display:flex;
+justify-content: center;
+align-items: center;
+border: none;
+flex-wrap:wrap;}
 
 .about {display: flex;
 align-items: center;
@@ -157,6 +154,8 @@ vertical-align: center;
 align-items: center;
 gap: 20px;
 }
+
+.spotify-embed {border-radius:12px;}
 
 .background-gigs {background-image: url("images/VEN_3620 2-min.jpg");}
 
@@ -275,8 +274,38 @@ a:active {
 
 .social-media {bottom: 5vh;}
 
+   .metal-heading {font-size: larger;
+  top:2vh;
+  padding-bottom: 3vh;}
 
 
+.submithub {height: 300px;}
+
+.picture-about {display:none}
+
+p {font-size: larger;
+text-align: center;
+padding-bottom: 3vh;}
+
+.members {flex-direction: column;
+align-items: center;
+gap:5vh}
+
+.members img {width:100%;}
+
+.members a {
+  display: inline-block;
+  width: 100%; }
+
+ .members a:hover img {
+  transform: none;
+}   
+
+.spotify-embed {width:80%;}
+
+  .background-gigs { background-image:none;
+   
+  }
 
 }
 

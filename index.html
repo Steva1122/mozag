@@ -52,18 +52,13 @@
 
     <section class="background-news background">
       <h2 class="metal-heading">New single "Shrouded In Darkness" OUT NOW! </h2>
-     <div class="mreza">
-     <div> <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/4V2uZaDL5ZT1iypj7yBjvS?utm_source=generator" width="700" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-    <div><iframe width="700" height="352" src="https://www.youtube.com/embed/tui2UMSDc1A?si=8w_9svh2sLehpSqr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div class="submithub"><iframe src="https://www.submithub.com/link/shrouded-in-darkness-1?new_window=true" scrolling="yes" width="100%" height="750px" style="max-width:500px"></iframe></div>
-     </div>
+      <div class="submithub"><iframe src="https://www.submithub.com/link/shrouded-in-darkness-1?new_window=true" scrolling="yes" height="750" width="80%" style="max-width:400px"></iframe></div>
     </section>
 
     <section id="about">
-
       <h2 class="metal-heading" style="top:0;">About</h2>
       <div class="about">
-        <img src="images/VEN_3810-min.jpg" alt="band picture" width="50%">
+        <img class="picture-about" src="images/VEN_3810-min.jpg" alt="band picture" width="50%">
        <p> We are a metalcore band from Serbia. Our sound is mainly melodic metalcore combined with other genres like: melodic death metal,
         thrash metal, groove metal. Heavily influenced by: Trivium, Killswitch Engage, Bullet For My Valentine. Currently working on our debut album.</p>
       </div>
@@ -78,9 +73,9 @@
     <section id="music">
       <h2 class="metal-heading">Music</h2>
       <div class="music">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/33LWzxqSJMesPLpq34oFd7?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe width="50%" height="352" src="https://www.youtube.com/embed/6CpXUnMptkQ?si=VYpsJ0DHtL29s-A2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="50%" height="352" src="https://www.youtube.com/embed/tui2UMSDc1A?si=9usllBAsmD-KaQaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="spotify-embed" src="https://open.spotify.com/embed/artist/33LWzxqSJMesPLpq34oFd7?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe  class="spotify-embed" width="50%" height="352" src="https://www.youtube.com/embed/6CpXUnMptkQ?si=VYpsJ0DHtL29s-A2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="spotify-embed" width="50%" height="352" src="https://www.youtube.com/embed/tui2UMSDc1A?si=9usllBAsmD-KaQaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
     <section id="gigs" class="background background-gigs">
@@ -117,21 +112,29 @@
     <div id="img-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:9999;">
       <img id="modal-img" src="" style="max-width:90vw; max-height:90vh; box-shadow:0 0 20px #000;">
     </div>
+
+
+    
     <script>
-      // Open modal on image click
-      document.querySelectorAll('.members a').forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.getElementById('modal-img').src = this.href;
-          document.getElementById('img-modal').style.display = 'flex';
-        });
+  // Only run modal script if screen is wider than 600px (desktop/tablet)
+  if (window.innerWidth > 600) {
+    document.querySelectorAll('.members a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const modal = document.getElementById('img-modal');
+        const modalImg = document.getElementById('modal-img');
+        modalImg.src = this.href;
+        modal.style.display = 'flex';
       });
-      // Close modal on overlay click
-      document.getElementById('img-modal').addEventListener('click', function() {
-        this.style.display = 'none';
-        document.getElementById('modal-img').src = '';
-      });
-    </script>
+    });
+
+    // Close modal on overlay click
+    document.getElementById('img-modal').addEventListener('click', function () {
+      this.style.display = 'none';
+      document.getElementById('modal-img').src = '';
+    });
+  }
+</script>
 
 
 
