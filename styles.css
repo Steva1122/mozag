@@ -104,7 +104,7 @@ transition: transform 0.3s;}
   font-weight: 100;
   position: relative;
   top: 5vh;
-  padding-bottom:10vh;
+  padding-bottom:5vh;
   }
 
 
@@ -118,7 +118,8 @@ padding-left:2vw;
 justify-content: center;
 align-items: center;
 border: none;
-flex-wrap:wrap;}
+flex-wrap:wrap;
+height:950px;}
 
 .about {display: flex;
 align-items: center;
@@ -274,14 +275,15 @@ a:active {
 
 .social-media a:hover{transform: none;}
 
-.social-media {bottom: 5vh;}
+.social-media {bottom: 10vh;}
 
    .metal-heading {font-size: larger;
   top:2vh;
   padding-bottom: 3vh;}
 
 
-.submithub {height: 300px;}
+.submithub {height: 500px;
+padding-top: 5vh;}
 
 .picture-about {display:none}
 
@@ -337,6 +339,7 @@ padding-top: 5vh;}
 
 }
 
+a {text-decoration: underline;}
 
 
 
