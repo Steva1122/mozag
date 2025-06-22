@@ -283,7 +283,6 @@ a:active {
   top:2vh;
   padding-bottom: 3vh;}
 
-
 .submithub {padding-top: 1vh;}
 
 .picture-about {display:none}
@@ -342,6 +341,94 @@ a {text-decoration: underline;}
 
 }
 
+@media (min-width: 601px) and (max-width:1366px) {
+
+  .background-home { background-image:url("images/VEN_3810-min.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position:  top center;  
+  }
+
+  .background-home::after{display:none}
+
+  .logo { float: right;
+  display: block;}
+
+  li:hover{transform: none}
+
+a:hover { color:#fff;
+transform: none;}
+
+a:active {
+  color: rgb(54, 84, 139);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.menu-icon:hover{color: #fff;
+  transform: none;  }
+
+  .menu-icon:active { color:rgb(54, 84, 139)}
+
+.social-media a:hover{transform: none;}
+
+  .metal-heading {font-size: 3vw;
+  top:2vh;
+  padding-bottom: 3vh;}
+
+  .picture-about {display:none}
+
+p {font-size: larger;
+text-align: center;
+padding-bottom: 3vh;}
+
+.members {display: grid;
+grid-template-columns: auto auto;
+padding-bottom: 50px;}
+
+.members img {width:100%;}
+
+.members a {
+  display: inline-block;
+  width: 100%; }
+
+ .members a:hover img {
+  transform: none;
+}   
+
+
+background-gigs { background-image:none;}
+
+  th {display:none}
+
+  td, tr{ display:block;
+  font-size:large;
+border-bottom-style: none;
+padding:1vw;}
+
+
+tr { display:block;
+  font-size:large;
+border-bottom-style:solid;
+padding:1vw;}
+
+
+td a:active {  color: rgb(24, 182, 37);
+  cursor: pointer;
+  transform:none;
+  }
+
+td:hover {transform: none;}
+
+#insta-contact {display: none;}
+
+#contact {display:none}
+
+#contact-mobile {display:block;
+padding-top: 5vh;}
+
+ .background-gigs { background-image:none;}
+}
 
 
 
