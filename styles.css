@@ -337,9 +337,11 @@ td:hover {transform: none;}
 #contact-mobile {display:block;
 padding-top: 5vh;}
 
+a {text-decoration: underline;}
+
 }
 
-a {text-decoration: underline;}
+
 
 
 
