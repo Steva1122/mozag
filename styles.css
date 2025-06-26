@@ -347,16 +347,21 @@ a {text-decoration: underline;}
 
 @media (min-width: 601px) and (max-width:1366px) {
 
-  .background-home { background-image:url("images/VEN_3810-min.jpg");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position:  top center;  
+.background-home { background-image:none;
   }
 
   .background-home::after{display:none}
 
-  .logo { float: right;
-  display: block;}
+  .container {display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;}
+
+  .logo {
+  display: block;
+  width: 80%;}
+
 
   li:hover{transform: none}
 
