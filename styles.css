@@ -12,7 +12,7 @@ background-size: cover;
 width: 100%;
 background-position: top center;
 position:relative ;
-height: 100vh;
+height: 100dvh;
 }
 
 .background-home {background-image:url("images/VEN_3576-min.jpg");} 
@@ -109,8 +109,8 @@ transition: transform 0.3s;}
   color: #fff;
   font-weight: 100;
   position: relative;
-  top: 5vh;
-  padding-bottom:5vh;
+  top: 5dvh;
+  padding-bottom:5dvh;
   }
 
 
@@ -238,7 +238,7 @@ display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;}
+  height: 100dvh;}
 
   .logo {
   display: block;
@@ -277,23 +277,23 @@ a:active {
 
 .social-media a:hover{transform: none;}
 
-.social-media {bottom: 10vh;}
+.social-media {bottom: 10dvh;}
 
    .metal-heading {font-size: larger;
-  top:2vh;
-  padding-bottom: 3vh;}
+  top:2dvh;
+  padding-bottom: 3dvh;}
 
-.submithub {padding-top: 1vh;}
+.submithub {padding-top: 1dvh;}
 
 .picture-about {display:none}
 
 p {font-size: larger;
 text-align: center;
-padding-bottom: 3vh;}
+padding-bottom: 3dvh;}
 
 .members {flex-direction: column;
 align-items: center;
-gap:5vh}
+gap:5dvh}
 
 .members img {width:100%;}
 
@@ -335,7 +335,7 @@ td:hover {transform: none;}
 #contact {display:none}
 
 #contact-mobile {display:block;
-padding-top: 5vh;}
+padding-top: 5dvh;}
 
 a {text-decoration: underline;}
 
@@ -352,7 +352,7 @@ a {text-decoration: underline;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;}
+  height: 100dvh;}
 
   .logo {
   display: block;
@@ -378,14 +378,14 @@ a:active {
 .social-media a:hover{transform: none;}
 
   .metal-heading {font-size: 3vw;
-  top:2vh;
-  padding-bottom: 3vh;}
+  top:2dvh;
+  padding-bottom: 3dvh;}
 
   .picture-about {display:none}
 
 p {font-size: larger;
 text-align: center;
-padding-bottom: 3vh;}
+padding-bottom: 3dvh;}
 
 .members {display: grid;
 grid-template-columns: auto auto;
@@ -427,7 +427,7 @@ td:hover {transform: none;}
 #contact {display:none}
 
 #contact-mobile {display:block;
-padding-top: 5vh;}
+padding-top: 5dvh;}
 
  .background-gigs { background-image:none;}
 }
