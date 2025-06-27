@@ -42,6 +42,12 @@ background-position:center;
   width: 100%;
 }
 
+.submithub {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;}
+
 .logo { width:15vw ;height: auto;}
 
 .container {position: relative;}
@@ -114,14 +120,6 @@ font-size: 2vw;
 padding-left:2vw;
 }  
 
-.submithub {display:flex;
-justify-content: center;
-align-items: center;
-border: none;
-flex-wrap:wrap;
-flex-direction: column;
-gap:20px;
-}
 
 .about {display: flex;
 align-items: center;
@@ -157,8 +155,6 @@ vertical-align: center;
 align-items: center;
 gap: 20px;
 }
-
-.spotify-embed {border-radius:12px;}
 
 .background-gigs {background-image: url("images/VEN_3620 2-min.jpg");}
 
