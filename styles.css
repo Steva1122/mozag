@@ -236,7 +236,7 @@ display: block;
   .background-home { background-image:none;
   }
 
-  .background {height: 90%;}
+  .background {height: auto;}
 
   .background-home::after{display:none}
 
@@ -354,7 +354,7 @@ a {text-decoration: underline;}
 
   .background-home::after{display:none}
 
-   .background {height: 90%;}
+   .background {height: auto;}
 
   .container {display: flex;
   flex-direction: column;
