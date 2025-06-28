@@ -12,7 +12,7 @@ background-size: cover;
 width: 100%;
 background-position: top center;
 position:relative ;
-height:var(--app-height);
+height: calc(var(--vh, 1vh) * 100);
 }
 
 .background-home {background-image:url("images/VEN_3576-min.jpg");} 
@@ -238,7 +238,7 @@ display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: var(--app-height);;}
+  height: calc(var(--vh, 1vh) * 100);}
 
   .logo {
   display: block;
@@ -352,7 +352,7 @@ a {text-decoration: underline;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: var(--app-height);;}
+  height: calc(var(--vh, 1vh) * 100);}
 
   .logo {
   display: block;
