@@ -236,7 +236,7 @@ display: block;
   .background-home { background-image:none;
   }
 
-  .background {height: 80%;}
+  .background {height: 90%;}
 
   .background-home::after{display:none}
 
@@ -354,7 +354,7 @@ a {text-decoration: underline;}
 
   .background-home::after{display:none}
 
-   .background {height: 80%;}
+   .background {height: 90%;}
 
   .container {display: flex;
   flex-direction: column;
@@ -386,14 +386,14 @@ a:active {
 .social-media a:hover{transform: none;}
 
   .metal-heading {font-size: 3vw;
-  top:2dvh;
-  padding-bottom: 3dvh;}
+  top:5%;
+  padding-bottom: 5%;}
 
   .picture-about {display:none}
 
 p {font-size: larger;
 text-align: center;
-padding-bottom: 3dvh;}
+padding-bottom: 5%;}
 
 .members {display: grid;
 grid-template-columns: auto auto;
@@ -435,7 +435,7 @@ td:hover {transform: none;}
 #contact {display:none}
 
 #contact-mobile {display:block;
-padding-top: 5dvh;}
+padding-top: 5%;}
 
  .background-gigs { background-image:none;}
 }
