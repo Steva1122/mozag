@@ -6,13 +6,17 @@ body{background-color: black;
 padding: 0;
 margin: 0;}
 
+body,html {
+  height: 100%;
+}
+
 .background {background-color: black;
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
 background-position: top center;
 position:relative ;
-height: calc(var(--vh, 1vh) * 100);
+height:100%;
 }
 
 .background-home {background-image:url("images/VEN_3576-min.jpg");} 
@@ -232,13 +236,15 @@ display: block;
   .background-home { background-image:none;
   }
 
+  .background {height: 80%;}
+
   .background-home::after{display:none}
 
   .container {display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(var(--vh, 1vh) * 100);}
+  height: 100%;}
 
   .logo {
   display: block;
@@ -348,11 +354,13 @@ a {text-decoration: underline;}
 
   .background-home::after{display:none}
 
+   .background {height: 80%;}
+
   .container {display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(var(--vh, 1vh) * 100);}
+  height: 100%;}
 
   .logo {
   display: block;

@@ -13,41 +13,48 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
     </head>
 
   <body>
-    <section class="background-home background">
+      <section class="background-home background">
       <div class="container">
-       <img class="logo" src="images/Mozag-beli.png" alt="band logo" loading="lazy">
-       <div class="pozicija">
-        <nav>
-          <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-          <label for="menu" class="menu-icon" >MENU</label>
-         <ul class="meni"> 
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#music">Music</a></li>
-          <li><a href="#gigs">Gigs</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="gallery.html" target="_blank">Gallery</a></li>
-         </ul> 
-        </nav>
+        <img class="logo" src="images/Mozag-beli.png" alt="band logo" loading="lazy">
+        <div class="pozicija">
+          <nav>
+            <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+            <label for="menu" class="menu-icon">MENU</label>
+            <ul class="meni"> 
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#music">Music</a></li>
+              <li><a href="#gigs">Gigs</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            </ul> 
+          </nav>
         </div>
       </div>
       <div class="social-media">
-          <a href="https://www.instagram.com/mozag.metal/" target="_blank" aria-label="Instagram"> 
-        <i class="fab fa-instagram"></i></a>
-          <a href="https://open.spotify.com/artist/33LWzxqSJMesPLpq34oFd7?si=35098c5573b945dc" target="_blank " aria-label="spotify">
-        <i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/@MOZAGOFFICIAL/videos" target="_blank" aria-label="youtube">
-        <i class="fa-brands fa-youtube"></i></a>
-          <a href="https://music.apple.com/us/artist/mozag/1805454643" target="_blank" aria-label="apple">
-        <i class="fab fa-apple"></i> </a>
-          <a href="https://www.facebook.com/profile.php?id=61576887393752" target="_blank" aria-label="facebook">
-        <i class="fa-brands fa-facebook-f"></i></a>
-         <a href="https://www.tiktok.com/@mozag.metal" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok"></i></a>
-    </div>
+        <a href="https://www.instagram.com/mozag.metal/" target="_blank" aria-label="Instagram"> 
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/33LWzxqSJMesPLpq34oFd7?si=35098c5573b945dc" target="_blank" aria-label="Spotify">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.youtube.com/@MOZAGOFFICIAL/videos" target="_blank" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://music.apple.com/us/artist/mozag/1805454643" target="_blank" aria-label="Apple Music">
+          <i class="fab fa-apple"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576887393752" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@mozag.metal" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
     </section>
 
     <section class="background-news background">
@@ -124,8 +131,6 @@
       <img id="modal-img" src="" style="max-width:90vw; max-height:90vh; box-shadow:0 0 20px #000;">
     </div>
 
-
-    
     <script>
   // Only run modal script if screen is wider than 600px (desktop/tablet)
   if (window.innerWidth > 600) {
@@ -146,33 +151,5 @@
     });
   }
 </script>
-
-<script>
-  function setVH() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  setVH();
-  window.addEventListener('resize', setVH);
-</script>
-
-
-
-
-    
-
-
-
-
-  </body>
-
-
-
-
-
-
-
-
-
-  
+</body>
 </html>
